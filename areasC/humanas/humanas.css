@@ -7,7 +7,7 @@
 body {
     background-color: whitesmoke;
     margin: 0;
-    padding: 0;
+    padding-bottom: 1%;
     font-family: "Slabo 27px", serif;
 }
 
@@ -75,27 +75,91 @@ a#areas:hover:before, a.button:hover:before{
     transform: scaleX(1);
 }
 
+
+/* Botao tri*/
+.tris{
+    font-size: X-large;
+    color: white
+  }
+
+  .navTris, a{
+    color: white;
+  }
+  
+  .navTris{ 
+    text-decoration: none;
+    padding: 1%;
+    font-size: 150%;
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-direction: row;
+    justify-items: center;
+  }
+  
+  section{
+    display: none; /*esconde todas as sections */
+  }
+  
+  section.ativo{
+    display: block; /* mostra a seção que estiver visível */
+  }
+
+  #tris1{
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    padding: 2%;
+  }
+  
+  #tris2{
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    padding: 2%;
+  }
+  
+  #tris3{
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    border-radius: 10px;
+    padding: 2%;
+  }
+  
+  .navTris a {
+    padding: 5px 10;
+    font-size: 100%;
+    color: white;
+    background-color: #010A26; /* Cor de fundo inicial */
+    text-decoration: none; 
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+  }
+  
+  /* Estilo ao passar o cursor sobre os links */
+  .navTris a:hover {
+    color: #010A26;
+    background-color: #C8D6F1; /* Nova cor de fundo ao passar o mouse */
+  }
+
+
+
 /* Atividades */
 .atividades {
     display: flex;
     flex-direction: column; /* todas em coluna */
-    gap: 20px; /* espaçamento entre elas */
     align-items: center;
-    margin-top: 30px;
 }
 
 .atividade {
     display: flex;
     flex-direction: row; /* imagem + texto lado a lado */
     align-items: center;
-    background: #9BBFAB;
+    background: #C8D6F1;
     border-radius: 12px;
-    padding: 20px;
-    gap: 20px;
-    width: 80%;
     max-width: 900px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     transition: transform 0.2s ease-in-out;
+    padding: 2%;
+    margin: 3%;
 }
 
 .atividade:hover {
@@ -117,4 +181,5 @@ a#areas:hover:before, a.button:hover:before{
 p {
     text-align: justify;
     margin: 0;
+    padding: 1%;
 }
