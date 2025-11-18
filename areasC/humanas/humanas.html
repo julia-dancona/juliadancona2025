@@ -23,6 +23,8 @@
 
 <body>
 
+    
+
     <div class="capa">
         <div class="header">
             <div class="portAnteriores">
@@ -45,10 +47,33 @@
     </div>
     </div>
 
+    <div class="container">
+
     <div class="navTris"> <!-- Criando uma nav bar com os requisitos do portfólio solicitados  -->
-        <a onclick="mostrarTrimestre(1)" id="tris1"> 1º Trimestre</a>
-        <a onclick="mostrarTrimestre(2)" id="tris2"> 2º Trimestre</a>
-        <a onclick="mostrarTrimestre(3)" id="tris3"> 3º Trimestre</a>
+        <div class="container-botao">
+            <button onclick="mostrarTrimestre(1)" id="tris1" class="btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" /> <!-- FAZ A ANIMAÇÃO AO REDOR DO BOTAO -->
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                </svg>
+                <span>1° Trimestre</span>
+            </button>
+
+            <button onclick="mostrarTrimestre(2)" id="tris1" class="btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" /> <!-- FAZ A ANIMAÇÃO AO REDOR DO BOTAO -->
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                </svg>
+                <span>2° Trimestre</span>
+            </button>
+
+            <button onclick="mostrarTrimestre(3)" id="tris1" class="btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" /> <!-- FAZ A ANIMAÇÃO AO REDOR DO BOTAO -->
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                </svg>
+                <span>3° Trimestre</span>
+            </button>
     </div>
 
     <div class="atividades">
@@ -194,6 +219,7 @@
             </div>
         </section>
 
+    </div>
     </div>
 
     <script src="/script.js"></script>
