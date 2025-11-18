@@ -50,7 +50,7 @@ body {
 
 a#areas, a.button{
     position: relative;
-    color: cornsilk;
+    color: #C8D6F1;
     text-decoration: none; 
 }
   
@@ -61,7 +61,7 @@ a#areas:before, a.button:before {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: cornsilk;
+    background-color: #C8D6F1;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);

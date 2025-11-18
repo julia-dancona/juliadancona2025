@@ -1,185 +1,209 @@
-.slabo-27px-regular {
-  font-family: "Slabo 27px", serif;
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding-bottom: 1%;
+  font-family: "Inter", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-body {
-    background-color: whitesmoke;
-    margin: 0;
-    padding-bottom: 1%;
-    font-family: "Slabo 27px", serif;
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 
 /* Cabeçalho */
-.capa{
-    display: flex;
-    padding-bottom: 5%;
+.capa {
+  display: flex;
+  padding-bottom: 5%;
 }
 
-.header{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 8%;
-    background-color: #010A26;
+.header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 8%;
+  background-color: #010A26;
 }
 
-.cabecalho{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.cabecalho {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.portAnteriores{
-    display: flex;
-    justify-content: space-around;
-    width: 5%;
-    padding-top: 1%;
-    padding-left: 93%;
+.portAnteriores {
+  display: flex;
+  justify-content: space-around;
+  width: 5%;
+  padding-top: 1%;
+  padding-left: 93%;
 }
 
-.areasTopo{
-    display: flex;
-    justify-content: space-around;
-    width: 35%;
+.areasTopo {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
 }
 
-a#areas, a.button{
-    position: relative;
-    color: cornsilk;
-    text-decoration: none; 
-}
-  
-a#areas:before, a.button:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: cornsilk;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-  
-a#areas:hover:before, a.button:hover:before{
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+a#areas,
+a.button {
+  position: relative;
+  color: #C8D6F1;
+  text-decoration: none;
 }
 
+a#areas:before,
+a.button:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #C8D6F1;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
 
-/* Botao tri*/
-.tris{
-    font-size: X-large;
-    color: white
-  }
+a#areas:hover:before,
+a.button:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
 
-  .navTris, a{
-    color: white;
-  }
-  
-  .navTris{ 
-    text-decoration: none;
-    padding: 1%;
-    font-size: 150%;
-  
-    display: flex;
-    justify-content: space-evenly;
-    align-self: center;
-    flex-direction: row;
-    justify-items: center;
-  }
-  
-  section{
-    display: none; /*esconde todas as sections */
-  }
-  
-  section.ativo{
-    display: block; /* mostra a seção que estiver visível */
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2;
+}
 
-  #tris1{
-    border: 1px solid rgba(255, 255, 255, 0.192);
-    border-radius: 10px;
-    padding: 2%;
-  }
-  
-  #tris2{
-    border: 1px solid rgba(255, 255, 255, 0.192);
-    border-radius: 10px;
-    padding: 2%;
-  }
-  
-  #tris3{
-    border: 1px solid rgba(255, 255, 255, 0.192);
-    border-radius: 10px;
-    padding: 2%;
-  }
-  
-  .navTris a {
-    padding: 5px 10;
-    font-size: 100%;
-    color: white;
-    background-color: #010A26; /* Cor de fundo inicial */
-    text-decoration: none; 
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
-  }
-  
-  /* Estilo ao passar o cursor sobre os links */
-  .navTris a:hover {
-    color: #010A26;
-    background-color: #C8D6F1; /* Nova cor de fundo ao passar o mouse */
-  }
+/* Botao trimestre*/
+.tris {
+  font-size: X-large;
+  color: white
+}
+
+.navTris {
+  text-decoration: none;
+  padding: 1%;
+  font-size: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  flex-direction: row;
+  justify-items: center;
+}
+
+section {
+  display: none;
+  /*esconde todas as sections */
+}
+
+section.ativo {
+  display: block;
+  /* mostra a seção que estiver visível */
+}
+
+#tris1 {
+  border: 1px solid rgba(255, 255, 255, 0.192);
+  border-radius: 10px;
+  padding: 2%;
+  cursor: pointer;
+}
+
+#tris2 {
+  border: 1px solid rgba(255, 255, 255, 0.192);
+  border-radius: 10px;
+  padding: 2%;
+  cursor: pointer;
+}
+
+#tris3 {
+  border: 1px solid rgba(255, 255, 255, 0.192);
+  border-radius: 10px;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.navTris a {
+  padding: 5px 10;
+  font-size: 100%;
+  color: #C8D6F1;
+  background-color: #010A26;
+  /* Cor de fundo inicial */
+  text-decoration: none;
+  border-radius: 5px;
+  /* Bordas arredondadas */
+  transition: background-color 0.3s ease;
+  /* Transição suave para a cor de fundo */
+}
+
+/* Estilo ao passar o cursor sobre os links */
+.navTris a:hover {
+  color: #010A26;
+  background-color: #C8D6F1;
+  /* Nova cor de fundo ao passar o mouse */
+}
 
 
 
 /* Atividades */
 .atividades {
-    display: flex;
-    flex-direction: column; /* todas em coluna */
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* todas em coluna */
+  align-items: center;
 }
 
 .atividade {
-    display: flex;
-    flex-direction: row; /* imagem + texto lado a lado */
-    align-items: center;
-    background: #C8D6F1;
-    border-radius: 12px;
-    max-width: 900px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    transition: transform 0.2s ease-in-out;
-    padding: 2%;
-    margin: 3%;
+  display: flex;
+  flex-direction: row;
+  /* imagem + texto lado a lado */
+  align-items: center;
+  background: #C8D6F1;
+  border-radius: 12px;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+  padding: 2%;
+  margin: 3%;
 }
 
 .atividade:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .atividade img {
-    width: 200px;
-    border-radius: 8px;
-    flex-shrink: 0; /* impede a imagem de encolher */
+  width: 200px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  /* impede a imagem de encolher */
 }
 
 .atividade .texto {
-    text-align: justify;
-    line-height: 1.5;
+  text-align: justify;
+  line-height: 1.5;
 }
 
 /* Texto geral */
 p {
-    text-align: justify;
-    margin: 0;
-    padding: 1%;
+  text-align: justify;
+  margin: 0;
+  padding: 1%;
 }
