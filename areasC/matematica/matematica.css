@@ -1,11 +1,12 @@
-/* ==================================== */
+
 /* ESTILOS GERAIS E FONTES */
-/* ==================================== */
 body {
-    background-color: #010A26;
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #010A26;
+  overflow-x: hidden;
 }
 
 .inter { font-family: "Inter", sans-serif; font-weight: 400; }
@@ -17,38 +18,35 @@ p {
     padding: 1%;
 }
 
-/* ==================================== */
 /* CABEÇALHO */
-/* ==================================== */
-.capa { display: flex; }
-
 .header {
-    position: fixed;
-    z-index: 100; /* Header acima das atividades (Nível 100) */
-    width: 100%;
-    height: 6%;
-    padding-bottom: 1%;
-    background-color: #010A26;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 5px 5px 10px rgba(85, 85, 85, 0.5);
-    top: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 6%;
+  padding: 1%;
+  background-color: #010A26;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px rgba(85, 85, 85, 0.5);
+  top: 0;
 }
 
 .cabecalho {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
+
 
 .portAnteriores {
     display: flex;
     justify-content: space-around;
     width: 5%;
-    padding-top: 1%;
+    padding-top: 0;
     padding-left: 93%;
 }
 
@@ -82,9 +80,7 @@ a#areas:hover:before, a.button:hover:before {
     transform: scaleX(1);
 }
 
-/* ==================================== */
 /* BOTÕES E SEÇÕES */
-/* ==================================== */
 .navTris {
     text-decoration: none;
     font-size: 100%;
@@ -102,7 +98,8 @@ section {
 
 section.ativo {
     display: flex; /* Mostra seção ativa */
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -145,13 +142,12 @@ svg {
 .btn:hover svg { stroke-dashoffset: -480; }
 .btn span { color: white; font-size: 18px; font-weight: 100; position: relative; z-index: 2; }
 
-/* ==================================== */
 /* ATIVIDADES */
-/* ==================================== */
 .atividades {
     display: flex; /* FLEXBOX para centralizar horizontalmente */
-    flex-direction: column;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%; 
     margin-top: 20px;
     padding-bottom: 50px;
@@ -179,9 +175,7 @@ svg {
 
 
 
-/* ==================================== */
 /* MODAL (Centralizado e Fixo) */
-/* ==================================== */
 .modal {
     display: none; /* O JS mudará para 'flex' */
     position: fixed; 
@@ -190,18 +184,15 @@ svg {
     top: 0; 
     width: 100%; 
     height: 100%;
-    
-    /* CENTRALIZAÇÃO PERFEITA DO MODAL NA TELA */
     justify-content: center; 
-    align-items: center;   
-    
+    align-items: center;  
     background-color: rgba(0,0,0,0.8); 
 }
 
 .modal-content {
     background-color: #fefefe;
     color: #010A26;
-    margin: 0; /* Sem margem, o flex faz o trabalho */
+    margin: 0;
     padding: 30px;
     border: 1px solid #888;
     width: 80%; 
