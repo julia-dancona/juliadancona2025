@@ -1,31 +1,41 @@
-.slabo-27px-regular {
-  font-family: "Slabo 27px", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
+/* ==================================== */
+/* ESTILOS GERAIS E FONTES */
+/* ==================================== */
 body {
-    background-color: whitesmoke;
-    margin: 0;
-    padding-bottom: 1%;
-    font-family: "Slabo 27px", serif;
-}
-
-/* Cabeçalho */
-.capa{
-    display: flex;
-    padding-bottom: 5%;
-}
-
-.header{
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 8%;
     background-color: #010A26;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
 }
 
-.cabecalho{
+.inter { font-family: "Inter", sans-serif; font-weight: 400; }
+.outfit { font-family: "Outfit", sans-serif; font-weight: 800; }
+
+p {
+    text-align: justify;
+    margin: 0;
+    padding: 1%;
+}
+
+/* ==================================== */
+/* CABEÇALHO */
+/* ==================================== */
+.capa { display: flex; }
+
+.header {
+    position: fixed;
+    z-index: 100; /* Header acima das atividades (Nível 100) */
+    width: 100%;
+    height: 6%;
+    padding-bottom: 1%;
+    background-color: #010A26;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(85, 85, 85, 0.5);
+    top: 0;
+}
+
+.cabecalho {
     margin: 0;
     padding: 0;
     display: flex;
@@ -34,7 +44,7 @@ body {
     width: 100%;
 }
 
-.portAnteriores{
+.portAnteriores {
     display: flex;
     justify-content: space-around;
     width: 5%;
@@ -42,18 +52,18 @@ body {
     padding-left: 93%;
 }
 
-.areasTopo{
+.areasTopo {
     display: flex;
     justify-content: space-around;
     width: 35%;
 }
 
-a#areas, a.button{
+a#areas, a.button {
     position: relative;
     color: #C8D6F1;
-    text-decoration: none; 
+    text-decoration: none;
 }
-  
+
 a#areas:before, a.button:before {
     content: "";
     position: absolute;
@@ -63,126 +73,179 @@ a#areas:before, a.button:before {
     left: 0;
     background-color: #C8D6F1;
     visibility: hidden;
-    -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-  
-a#areas:hover:before, a.button:hover:before{
+
+a#areas:hover:before, a.button:hover:before {
     visibility: visible;
-    -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-
-/* Botao tri*/
-.tris{
-    font-size: X-large;
-    color: white
-  }
-
-  .navTris, a{
-    color: white;
-  }
-  
-  .navTris{ 
+/* ==================================== */
+/* BOTÕES E SEÇÕES */
+/* ==================================== */
+.navTris {
     text-decoration: none;
-    padding: 1%;
-    font-size: 150%;
-  
+    font-size: 100%;
     display: flex;
     justify-content: space-evenly;
     align-self: center;
-    flex-direction: row;
+    flex-direction: column;
     justify-items: center;
-  }
-  
-  section{
-    display: none; /*esconde todas as sections */
-  }
-  
-  section.ativo{
-    display: block; /* mostra a seção que estiver visível */
-  }
+}
 
-  #tris1{
-    border: 1px solid rgba(255, 255, 255, 0.192);
-    border-radius: 10px;
-    padding: 2%;
-    cursor: pointer;
-  }
-  
-  #tris2{
-    border: 1px solid rgba(255, 255, 255, 0.192);
-    border-radius: 10px;
-    padding: 2%;
-    cursor: pointer;
-  }
-  
-  #tris3{
-    border: 1px solid rgba(255, 255, 255, 0.192);
-    border-radius: 10px;
-    padding: 2%;
-    cursor: pointer;
-  }
-  
-  .navTris a {
-    padding: 5px 10;
-    font-size: 100%;
-    color: white;
-    background-color: #010A26; /* Cor de fundo inicial */
-    text-decoration: none; 
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
-  }
-  
-  /* Estilo ao passar o cursor sobre os links */
-  .navTris a:hover {
-    color: #010A26;
-    background-color: #C8D6F1; /* Nova cor de fundo ao passar o mouse */
-  }
+section {
+    display: none; /* Esconde seções */
+    width: 100%;
+}
 
-
-
-/* Atividades */
-.atividades {
-    display: flex;
-    flex-direction: column; /* todas em coluna */
+section.ativo {
+    display: flex; /* Mostra seção ativa */
+    flex-direction: column;
     align-items: center;
+}
+
+.container-botao {
+    width: 100%;  
+    height: 30vh; 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #010A26;
+    z-index: 1;
+    padding-top: 6%; /* Espaço para não ficar escondido atrás do header */
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    position: relative;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover { background: #C8D6F1; transition: 2s; }
+.btn:hover span { color: #010A26; }
+.btn:hover svg { stroke-dashoffset: -480; }
+.btn span { color: white; font-size: 18px; font-weight: 100; position: relative; z-index: 2; }
+
+/* ==================================== */
+/* ATIVIDADES */
+/* ==================================== */
+.atividades {
+    display: flex; /* FLEXBOX para centralizar horizontalmente */
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    margin-top: 20px;
+    padding-bottom: 50px;
 }
 
 .atividade {
     display: flex;
-    flex-direction: row; /* imagem + texto lado a lado */
+    justify-content: center;
     align-items: center;
     background: #C8D6F1;
     border-radius: 12px;
-    max-width: 900px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    max-width: 300px; 
+    min-height: 150px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease-in-out;
-    padding: 2%;
-    margin: 3%;
+    padding: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1; 
+    cursor: pointer; 
 }
 
-.atividade:hover {
-    transform: scale(1.02);
+.atividade:hover { transform: scale(1.05); }
+.atividade img { max-width: 100%; height: auto; border-radius: 8px; display: block; }
+
+
+
+/* ==================================== */
+/* MODAL (Centralizado e Fixo) */
+/* ==================================== */
+.modal {
+    display: none; /* O JS mudará para 'flex' */
+    position: fixed; 
+    z-index: 200; /* Modal acima de tudo (Nível 200) */
+    left: 0;
+    top: 0; 
+    width: 100%; 
+    height: 100%;
+    
+    /* CENTRALIZAÇÃO PERFEITA DO MODAL NA TELA */
+    justify-content: center; 
+    align-items: center;   
+    
+    background-color: rgba(0,0,0,0.8); 
 }
 
-.atividade img {
-    width: 200px;
+.modal-content {
+    background-color: #fefefe;
+    color: #010A26;
+    margin: 0; /* Sem margem, o flex faz o trabalho */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px; 
     border-radius: 8px;
-    flex-shrink: 0; /* impede a imagem de encolher */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 201; 
+    max-height: 90vh; 
+    overflow-y: auto;
 }
 
-.atividade .texto {
-    text-align: justify;
-    line-height: 1.5;
+.modal-content h2 {
+    font-family: "Outfit", sans-serif;
+    margin-top: 0;
+    border-bottom: 2px solid #C8D6F1;
+    padding-bottom: 10px;
 }
 
-/* Texto geral */
-p {
-    text-align: justify;
-    margin: 0;
-    padding: 1%;
+/* Mídia dentro do modal */
+.modal-media {
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #eee;
 }
+
+.modal-media img {
+    max-width: 100%;
+    max-height: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+}
+.close-button:hover { color: #010A26; }

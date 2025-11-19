@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linguagens</title>
+    <title>Linguagens e Códigos</title>
+    
     <link rel="stylesheet" href="linguagens.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <div class="capa">
         <div class="header">
             <div class="portAnteriores">
-                <a href="https://www.canva.com/design/DAFws3wZwOc/O4NuN2Xkff2AcW4mo7wZIA/edit?utm_content=DAFws3wZwOc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="button">2023</a>
-                <a href="https://sites.google.com/estudante.sesisenai.org.br/portfolio-2024-juliadancona/in%C3%ADcio" class="button">2024</a>
+                <a href="#" class="button">2023</a>
+                <a href="#" class="button">2024</a>
             </div>
-    
+
             <div class="cabecalho">
                 <div class="areasTopo">
                     <a href="/index.html" id="areas">Inicio</a>
@@ -27,171 +34,176 @@
         </div>
     </div>
 
-    <div class="navTris">   <!-- Criando uma nav bar com os requisitos do portfólio solicitados  -->
-        <a onclick="mostrarTrimestre(1)" id="tris1"> 1º Trimestre</a>
-        <a onclick="mostrarTrimestre(2)"id="tris2"> 2º Trimestre</a>
-        <a onclick="mostrarTrimestre(3)" id="tris3"> 3º Trimestre</a>
-    </div>
+    <div class="container">
+        <div class="container-botao">
+            <button id="btn-tris1" class="btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                </svg>
+                <span>1° Trimestre</span>
+            </button>
 
-            <div class="atividades">
-<section class="(1)" id="trimestre1">  
-        <div class="atividade">
-        <a href="https://www.canva.com/design/DAGlSJLahUw/u3CzqO3RKlL6hgA5QgC7TQ/edit?utm_content=DAGlSJLahUw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-            <img src="/imagens/redacaoOnline.png" alt="Redação Online">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Redação Online
-            <br><b>Habilidades: </b> H4, H7, H8                
-            <br><b>Objetivo: </b> Desenvolver a capacidade de argumentar, organizar ideias com clareza e se expressar de forma eficiente — habilidades importantes tanto para provas como o ENEM e concursos, quanto para a vida profissional e acadêmica.
+            <button id="btn-tris2" class="btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                </svg>
+                <span>2° Trimestre</span>
+            </button>
+
+            <button id="btn-tris3" class="btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                </svg>
+                <span>3° Trimestre</span>
+            </button>
+        </div>
+
+        <div class="atividades">
+
+            <section class="ativo" id="trimestre1">
+                
+                <div class="atividade" 
+                     data-nome="Redação Online" 
+                     data-habilidades="H4, H7, H8"
+                     data-objetivo="Desenvolver a capacidade de argumentar, organizar ideias com clareza e se expressar de forma eficiente — habilidades importantes tanto para provas como o ENEM e concursos, quanto para a vida profissional e acadêmica."
+                     data-link="https://www.canva.com/design/DAGlSJLahUw/u3CzqO3RKlL6hgA5QgC7TQ/edit?utm_content=DAGlSJLahUw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                     data-imagem-src="/imagens/redacaoOnline.png">
+                    <img src="/imagens/redacaoOnline.png" alt="Redação Online">
+                </div>
+
+                <div class="atividade" 
+                     data-nome="Revista Literária" 
+                     data-habilidades="H4/H24"
+                     data-objetivo="Realizar as tarefas relativas à obra de Machado de Assis."
+                     data-link="https://www.canva.com/design/DAGi3NrXktY/pQkMpQhgYOglOvciR_tSqw/edit?utm_content=DAGi3NrXktY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                     data-imagem-src="/imagens/Revista-literária .png">
+                    <img src="/imagens/Revista-literária .png" alt="Revista Literária">
+                </div>
+
+                <div class="atividade" 
+                     data-nome="Paddlet UFSC" 
+                     data-habilidades="H4, H7, H8"
+                     data-objetivo="O objetivo dessa atividade é organizar a leitura das obras obrigatórias do vestibular UFSC 2026 e fazer com que os alunos registrem suas opiniões e reflexões. Comentário: É um jeito de compartilhar um pouco sobre as experiências de cada um lendo, ou como esperam que seja o livro."
+                     data-link="https://padlet.com/padlets/i3y2t016v48gskg/embeds/preview_embed"
+                     data-imagem-src="/imagens/livros+ufsc.webp">
+                    <img src="/imagens/livros+ufsc.webp" alt="Paddlet">
+                </div>
+
+                <div class="atividade" 
+                     data-nome="Reconto 'Pai contra mãe'" 
+                     data-habilidades="H4, H7, H8"
+                     data-objetivo="Trabalhar as habilidades de leitura, interpretação e produção escrita, incentivando os alunos a compreenderem o contexto histórico do Realismo. Comentário: Achei a proposta interessante porque mistura leitura, criatividade e interpretação, o que deixa a aula mais leve."
+                     data-link="https://www.canva.com/design/DAGi-VniuO0/w8yrmRYjrSbmUvvyAW8TqQ/edit?utm_content=DAGi-VniuO0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                     data-imagem-src="/imagens/reconto.png">
+                    <img src="/imagens/reconto.png" alt="Reconto">
+                </div>
+
+                <div class="atividade" 
+                     data-nome="Biografia" 
+                     data-habilidades="H4, H7, H8"
+                     data-objetivo="Treinar a escrita de biografias é uma ótima forma de desenvolver habilidades como organização cronológica, narrativa envolvente e uso preciso da linguagem. Comentário: Atividade fácil de fazer."
+                     data-link="https://docs.google.com/document/d/1FKVgIiBMpJ-JxroxSfATRLXnrAIdgwjoNxTnLBG9ZSU/edit?usp=sharing"
+                     data-imagem-src="/imagens/biografia.png">
+                    <img src="/imagens/biografia.png" alt="Biografia">
+                </div>
+
+                <div class="atividade" 
+                     data-nome="Site Repertório ENEM" 
+                     data-habilidades="H4, H7, H8"
+                     data-objetivo="Ter um bom repertório sociocultural é essencial para mandar bem na redação do ENEM. Comentário: Atividade legal que futuramente vai ajudar a estudar repertórios para o ENEM."
+                     data-link="https://sites.google.com/estudante.sesisenai.org.br/informaenem3b/início"
+                     data-imagem-src="/imagens/repertorio.png">
+                    <img src="/imagens/repertorio.png" alt="Repertório">
+                </div>
+
+            </section>
+
+            <section id="trimestre2">
+                
+                <div class="atividade" 
+                     data-nome="What Kind of Art do You Consume" 
+                     data-habilidades="H11 e H25"
+                     data-objetivo="O objetivo da atividade é produzir um trabalho em inglês para o portfólio, praticando o uso do tempo verbal Simple Past e desenvolvendo a escrita sobre preferências culturais e artísticas. Comentário: Atividade legal sobre nossos gostos pessoais."
+                     data-link="https://www.canva.com/design/DAGviCLoG0k/VrqfsYb06vsAZKGKikyn2g/edit?utm_content=DAGviCLoG0k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                     data-imagem-src="/imagens/wkayc.png">
+                    <img src="/imagens/wkayc.png" alt="wkayc">
+                </div>
+
+                <div class="atividade" 
+                     data-nome="Revista Literária" 
+                     data-habilidades="H11 e H25"
+                     data-objetivo="Tivemos como objetivo testar nossos conhecimentos a respeito dos livros 'O outro lado da bola' e 'Parque Industrial'. Assim como, continuar com a criação da Revista Literária."
+                     data-link="https://www.canva.com/design/DAGi3NrXktY/pQkMpQhgYOglOvciR_tSqw/edit?utm_content=DAGi3NrXktY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                     data-imagem-src="/imagens/Revista-literária .png">
+                    <img src="/imagens/Revista-literária .png" alt="Revista Literaria">
+                </div>
+
+                <div class="atividade" 
+                     data-nome="Redação Online" 
+                     data-habilidades="-"
+                     data-objetivo="O objetivo da redação online é avaliar como o aluno organiza suas ideias e escreve de forma clara e coerente sobre um tema."
+                     data-link="https://app.redacaonline.com.br/sesi-sc/aluno/redacao/2403162/abrir"
+                     data-imagem-src="/imagens/redacao.png">
+                    <img src="/imagens/redacao.png" alt="Redacao">
+                </div>
+
+            </section>
+
+            <section id="trimestre3">
+                
+                <div class="atividade" 
+                     data-nome="Carta de intenção" 
+                     data-habilidades="H12, H15, H16 & H4"
+                     data-objetivo="O objetivo principal é que o estudante redija uma Carta de Intenção formal, solicitando sua admissão em uma instituição de ensino superior. Comentário: Atividade legal sobre nossos gostos pessoais."
+                     data-link="https://docs.google.com/document/d/1KwXk4imW4_7mb9lNqyFVo4y_SyfaghHQCrFQZCbySYI/edit?usp=sharing"
+                     data-imagem-src="/imagens/Carta-de-intencao.png">
+                    <img src="/imagens/Carta-de-intencao.png" alt="Carta de intenção">
+                </div>
+
+                <div class="atividade" 
+                     data-nome="Revista Literária" 
+                     data-habilidades="H11 e H25"
+                     data-objetivo="Tivemos como objetivo testar nossos conhecimentos a respeito dos livros 'O outro lado da bola' e 'Parque Industrial'."
+                     data-link="https://www.canva.com/design/DAGi3NrXktY/pQkMpQhgYOglOvciR_tSqw/edit?utm_content=DAGi3NrXktY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                     data-imagem-src="/imagens/RevistaLiteraria.png">
+                    <img src="/imagens/RevistaLiteraria.png" alt="Revista Literaria">
+                </div>
+
+                <div class="atividade" 
+                     data-nome="Redação Online" 
+                     data-habilidades="-"
+                     data-objetivo="O objetivo da redação online é avaliar como o aluno organiza suas ideias e escreve de forma clara e coerente sobre um tema."
+                     data-link="https://app.redacaonline.com.br/sesi-sc/aluno/redacao/2491613/abrir"
+                     data-imagem-src="/imagens/Redação.png">
+                    <img src="/imagens/Redação.png" alt="Redacao">
+                </div>
+
+            </section>
+
         </div>
     </div>
 
-    <!-- Atividade 2 -->
-    <div class="atividade">
-        <a href="https://www.canva.com/design/DAGi3NrXktY/pQkMpQhgYOglOvciR_tSqw/edit?utm_content=DAGi3NrXktY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-            <img src="/imagens/Revista-literária .png" alt="Revista Literária">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Revista Literária
-            <br><b>Habilidades: </b>H4/H24
-            <br><b>Objetivo: </b> Realizar as tarefas relativas à obra de Machado de Assis.
-            </p>
+    <div id="modalAtividade" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Detalhes da Atividade</h2>
+
+            <div class="modal-media">
+                <a id="modalLink" href="#" target="_blank">
+                    <img id="modalImagem" src="" alt="Imagem da Atividade">
+                </a>
+            </div>
+
+            <p><b>Nome:</b> <span id="modalNome"></span></p>
+            <p><b>Habilidades:</b> <span id="modalHabilidades"></span></p>
+            <p><b>Objetivo:</b> <span id="modalObjetivo"></span></p>
         </div>
     </div>
 
-    <!-- Atividade 3 -->
-    <div class="atividade">
-        <a href="https://padlet.com/padlets/i3y2t016v48gskg/embeds/preview_embed">
-            <img src="/imagens/livros+ufsc.webp" alt="Paddlet">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Paddlet UFSC
-            <br><b>Habilidades: </b> H4, H7, H8                
-            <br><b>Objetivo: </b> O objetivo dessa atividade é organizar a leitura das obras obrigatórias do vestibular UFSC 2026 e fazer com que os alunos registrem suas opiniões e reflexões sobre cada livro no mural do Padlet, além de usar isso como parte da avaliação do trimestre e do portfólio.
-                <br><b>Comentário: </b>É um jeito de compartilhar um pouco sobre as experiências de cada um lendo, ou como esperam que seja o livro</p>
-        </div>
-    </div>
-    <!-- Atividade 4 -->
-    <div class="atividade">
-        <a href="https://www.canva.com/design/DAGi-VniuO0/w8yrmRYjrSbmUvvyAW8TqQ/edit?utm_content=DAGi-VniuO0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-            <img src="/imagens/reconto.png" alt="Reconto">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Reconto 'Pai contra mãe'
-            <br><b>Habilidades: </b> H4, H7, H8                
-            <br><b>Objetivo: </b> trabalhar as habilidades de leitura, interpretação e produção escrita, incentivando os alunos a compreenderem o contexto histórico do Realismo e a se aprofundarem no conteúdo literário ao mesmo tempo em que desenvolvem suas capacidades criativas e analíticas.
-                <br><b>Comentário: </b>Achei a proposta interessante porque mistura leitura, criatividade e interpretação, o que deixa a aula mais leve. Participar da discussão e criar algo depois ajuda a entender melhor o texto e o estilo do autor. Trabalhar o contexto histórico também faz a gente ver o conto de outra forma.</p>
-            </div>
-    </div>
-    <!-- Atividade 5 -->
-    <div class="atividade">
-        <a href="https://docs.google.com/document/d/1FKVgIiBMpJ-JxroxSfATRLXnrAIdgwjoNxTnLBG9ZSU/edit?usp=sharing">
-            <img src="/imagens/biografia.png" alt="Biografia">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Biografia
-            <br><b>Habilidades: </b> H4, H7, H8                
-            <br><b>Objetivo: </b> Treinar a escrita de biografias é uma ótima forma de desenvolver habilidades como organização cronológica, narrativa envolvente e uso preciso da linguagem. Saber escrever uma boa biografia é útil tanto em contextos escolares e acadêmicos quanto em projetos profissionais, como perfis para redes sociais, livros, artigos e apresentações.
-                <br><b>Comentário: </b>Atividade fácil de fazer.</p>
-            </div>
-    </div>
-
-    <!-- Atividade 6 -->
-    <div class="atividade">
-        <a href="https://sites.google.com/estudante.sesisenai.org.br/informaenem3b/início">
-            <img src="/imagens/repertorio.png" alt="Repertório">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Site Repertório ENEM
-            <br><b>Habilidades: </b> H4, H7, H8                
-            <br><b>Objetivo: </b> Ter um bom repertório sociocultural é essencial para mandar bem na redação do ENEM. Ele mostra que você tem bagagem intelectual, sabe relacionar temas com diferentes áreas do conhecimento e enriquece seu texto com referências relevantes.
-                <br><b>Comentário: </b>Atividade legal que futuramente vai ajudar a estudar repertórios para o ENEM</p>
-            </div>
-    </div>
-</section>
-
-<section class="(2)" id="trimestre2">
-
-    <!-- Atividade 7 -->
-    <div class="atividade">
-        <a href="https://www.canva.com/design/DAGviCLoG0k/VrqfsYb06vsAZKGKikyn2g/edit?utm_content=DAGviCLoG0k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-            <img src="/imagens/wkayc.png" alt="wkayc">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> What Kind of Art do You Consume
-            <br><b>Habilidades: </b> H11 e H25                
-            <br><b>Objetivo: </b>O objetivo da atividade é produzir um trabalho em inglês para o portfólio, praticando o uso do tempo verbal Simple Past e desenvolvendo a escrita sobre preferências culturais e artísticas. A proposta busca unir o aprendizado da língua inglesa à expressão pessoal, permitindo que os alunos contem fatos e informações de forma organizada.
-                <br><b>Comentário: </b>Atividade legal sobre nossos gostos pessoais.</p>
-            </div>
-    </div>
-
-    <!-- Atividade 8 -->
-    <div class="atividade">
-        <a href="https://www.canva.com/design/DAGi3NrXktY/pQkMpQhgYOglOvciR_tSqw/edit?utm_content=DAGi3NrXktY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-            <img src="/imagens/Revista-literária .png" alt="Revista Literaria">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Revista Literária
-            <br><b>Habilidades: </b> H11 e H25               
-            <br><b>Objetivo: </b>Tivemos como objetivo testar nossos conhecimentos a respeito dos livros "O outro lado da bola" e "Parque Industrial". Assim como, continuar com a criação da Revista Literária e postar as atividades das obras ao longo do ano.
-            </div>
-    </div>
-    
-    <!-- Atividade 9 -->
-    <div class="atividade">
-        <a href="https://app.redacaonline.com.br/sesi-sc/aluno/redacao/2403162/abrir">
-            <img src="/imagens/redacao.png" alt="Redacao">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Redação Online
-            <br><b>Habilidades: </b> -              
-            <br><b>Objetivo: </b>O objetivo da redação online é avaliar como o aluno organiza suas ideias e escreve de forma clara e coerente sobre um tema, usando a língua corretamente para expressar seu ponto de vista. Também ajuda a desenvolver o pensamento crítico e a comunicação escrita.
-            </div>
-    </div>
-</section>
-
-<section class="(3)" id="trimestre3">
-
-    <!-- Atividade 7 -->
-    <div class="atividade">
-        <a href="https://docs.google.com/document/d/1KwXk4imW4_7mb9lNqyFVo4y_SyfaghHQCrFQZCbySYI/edit?usp=sharing">
-            <img src="/imagens/Carta-de-intencao.png" alt="Carta de intenção">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b>Carta de intenção
-            <br><b>Habilidades: </b> H12, H15, H16 & H4              
-            <br><b>Objetivo: </b>O objetivo principal é que o estudante redija uma Carta de Intenção formal, solicitando sua admissão em uma instituição de ensino superior. A atividade visa desenvolver a capacidade de comunicação persuasiva e a habilidade de seguir a estrutura obrigatória de um documento essencial para processos seletivos acadêmicos.
-                <br><b>Comentário: </b>Atividade legal sobre nossos gostos pessoais.</p>
-            </div>
-    </div>
-
-    <!-- Atividade 8 -->
-    <div class="atividade">
-        <a href="https://www.canva.com/design/DAGi3NrXktY/pQkMpQhgYOglOvciR_tSqw/edit?utm_content=DAGi3NrXktY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-            <img src="/imagens/RevistaLiteraria.png" alt="Revista Literaria">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Revista Literária
-            <br><b>Habilidades: </b> H11 e H25               
-            <br><b>Objetivo: </b>Tivemos como objetivo testar nossos conhecimentos a respeito dos livros "O outro lado da bola" e "Parque Industrial". Assim como, continuar com a criação da Revista Literária e postar as atividades das obras ao longo do ano.
-            </div>
-    </div>
-    
-    <!-- Atividade 9 -->
-    <div class="atividade">
-        <a href="https://app.redacaonline.com.br/sesi-sc/aluno/redacao/2491613/abrir">
-            <img src="/imagens/Redação.png" alt="Redacao">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Redação Online
-            <br><b>Habilidades: </b> -              
-            <br><b>Objetivo: </b>O objetivo da redação online é avaliar como o aluno organiza suas ideias e escreve de forma clara e coerente sobre um tema, usando a língua corretamente para expressar seu ponto de vista. Também ajuda a desenvolver o pensamento crítico e a comunicação escrita.
-            </div>
-    </div>
-</section>  
-
-</div>
-
-<script src="/script.js"></script>
+    <script src="/script.js"></script>
 </body>
+
 </html>

@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matemática</title>
+    
     <link rel="stylesheet" href="matematica.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     
     <div class="capa">
@@ -27,102 +34,120 @@
         </div>
     </div>
 
-    <div class="navTris">   <!-- Criando uma nav bar com os requisitos do portfólio solicitados  -->
-        <a onclick="mostrarTrimestre(1)" id="tris1"> 1º Trimestre</a>
-        <a onclick="mostrarTrimestre(2)"id="tris2"> 2º Trimestre</a>
-        <a onclick="mostrarTrimestre(3)" id="tris3"> 3º Trimestre</a>
+    <div class="container">
+        <div class="container-botao">
+            <button id="btn-tris1" class="btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                </svg>
+                <span>1° Trimestre</span>
+            </button>
+
+            <button id="btn-tris2" class="btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                </svg>
+                <span>2° Trimestre</span>
+            </button>
+
+            <button id="btn-tris3" class="btn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" />
+                </svg>
+                <span>3° Trimestre</span>
+            </button>
+        </div>
+
+        <div class="atividades">
+
+            <section class="ativo" id="trimestre1">  
+
+                <div class="atividade"
+                     data-nome="Quebrando a Banca"
+                     data-habilidades="C5: H31, H32"
+                     data-objetivo="Identificar em diferentes áreas científicas e outras atividades práticas modelos e problemas que fazem uso de estatísticas e probabilidades. Comentário: Muito legal, o filme foi ótimo e a atividade foi bem tranquila de fazer."
+                     data-link="https://docs.google.com/document/d/13_8LaxGBqfPOst-FE26tTQPqjc1K7qQkSs8fBSTb3CA/edit?usp=sharing"
+                     data-imagem-src="/imagens/quebrandoBanca.avif">
+                    <img src="/imagens/quebrandoBanca.avif" alt="Quebrando a Banca">
+                </div>
+
+                <div class="atividade"
+                     data-nome="Criando a Banca da Matemática"
+                     data-habilidades="H30, H31"
+                     data-objetivo="Desenvolver um jogo original ou atividades gamificadas utilizando os conceitos de análise combinatória e teoria das probabilidades, inspirado no filme Quebrando a Banca. Comentário: Foi legal desenvolver o jogo, principalmente o tabuleiro e os personagens."
+                     data-link="https://docs.google.com/document/d/1EX5FKLEWPTvTHn65rW2puCIiTMZxk52m0VtE5SBWegY/edit?usp=sharing"
+                     data-imagem-src="/imagens/CARTÃO-RESPOSTA.png">
+                    <img src="/imagens/CARTÃO-RESPOSTA.png" alt="Cartão Resposta">
+                </div>
+
+            </section>
+
+            <section id="trimestre2">  
+
+                <div class="atividade"
+                     data-nome="Estatistica"
+                     data-habilidades="C4 - H27, H28 E H29"
+                     data-objetivo="Desenvolver uma pesquisa simples para coletar dados, aplicar medidas estatísticas (média, mediana, moda, amplitude), criar gráficos e interpretar os resultados. Comentário: Atividade simples de ser feita e interessante observar os dados coletados na pesquisa."
+                     data-link="https://docs.google.com/forms/d/e/1FAIpQLSe5ajmuLyhOcLW2eDunDY5oYs3ktt3U_iMzvqQZkQWocEL9DA/viewform?usp=header"
+                     data-imagem-src="/imagens/estatistica.webp">
+                    <img src="/imagens/estatistica.webp" alt="estatistica">
+                </div>
+
+                <div class="atividade"
+                     data-nome="PASSE"
+                     data-habilidades="C5, H30 e H31"
+                     data-objetivo="Analisar e interpretar o desempenho dos alunos em Matemática ao longo da etapa escolar, identificando níveis de proficiência. Comentário: É um meio de conseguir identificar quais matérias precisam ser revisadas."
+                     data-link="https://exams-sesi-avaliacao-2022.didatti.net.br/aluno-relatorio/70473180152?periodo=15"
+                     data-imagem-src="/imagens/passe.png">
+                    <img src="/imagens/passe.png" alt="passe">
+                </div>
+
+                <div class="atividade"
+                     data-nome="Estatistica"
+                     data-habilidades="C4 - H27, H28 E H29"
+                     data-objetivo="Desenvolver uma pesquisa simples para coletar dados, aplicar medidas estatísticas (média, mediana, moda, amplitude), criar gráficos e interpretar os resultados. Comentário: Atividade simples de ser feita e interessante observar os dados coletados na pesquisa."
+                     data-link="https://docs.google.com/forms/d/e/1FAIpQLSe5ajmuLyhOcLW2eDunDY5oYs3ktt3U_iMzvqQZkQWocEL9DA/viewform?usp=header"
+                     data-imagem-src="/imagens/estatistica.webp">
+                    <img src="/imagens/estatistica.webp" alt="estatistica">
+                </div>
+
+            </section>
+
+            <section id="trimestre3">  
+
+                <div class="atividade"
+                     data-nome="Apresentação Confeitaria"
+                     data-habilidades="C5, H30 e H31"
+                     data-objetivo="Analisar e interpretar o desempenho dos alunos em Matemática ao longo da etapa escolar. Comentário: É um meio de conseguir identificar quais matérias precisam ser revisadas."
+                     data-link="https://www.canva.com/design/DAG3LcmbBnI/Cue6T9Pxu2OS8kjOF4duvg/edit?utm_content=DAG3LcmbBnI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                     data-imagem-src="/imagens/Apresentação confeitaria .png">
+                    <img src="/imagens/Apresentação confeitaria .png" alt="Confeitaria">
+                </div>
+
+            </section>
+        </div>
     </div>
 
-<div class="atividades">
+    <div id="modalAtividade" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Detalhes da Atividade</h2>
 
-<section class="(1)" id="trimestre1">  
-
-    <!-- Atividade 1 -->
-    <div class="atividade">
-        <a href="https://docs.google.com/document/d/13_8LaxGBqfPOst-FE26tTQPqjc1K7qQkSs8fBSTb3CA/edit?usp=sharing">
-            <img src="/imagens/quebrandoBanca.avif" alt="Quebrando a Banca">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Quebrando a Banca
-                <br><b>Habilidades: </b> C5: H31, H32
-                <br><b>Objetivo: </b> Identificar em diferentes áreas científicas e outras atividades práticas modelos e problemas que fazem uso de estatísticas e probabilidades.
-                <br><b>Comentário: </b>Muito legal, o filme foi ótimo e a atividade foi bem tranquila de fazer</p>
+            <div class="modal-media">
+                <a id="modalLink" href="#" target="_blank">
+                    <img id="modalImagem" src="" alt="Imagem da Atividade">
+                </a>
             </div>
+
+            <p><b>Nome:</b> <span id="modalNome"></span></p>
+            <p><b>Habilidades:</b> <span id="modalHabilidades"></span></p>
+            <p><b>Objetivo:</b> <span id="modalObjetivo"></span></p>
+        </div>
     </div>
 
-    <!-- Atividade 2 -->
-    <div class="atividade">
-        <a href="https://docs.google.com/document/d/1EX5FKLEWPTvTHn65rW2puCIiTMZxk52m0VtE5SBWegY/edit?usp=sharing">
-            <img src="/imagens/CARTÃO-RESPOSTA.png" alt="Cartão Resposta">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Criando a Banca da Matemática
-                <br><b>Habilidades: </b> H30, H31
-                <br><b>Objetivo: </b> Desenvolver um jogo original ou atividades gamificadas utilizando os conceitos de análise combinatória e teoria das probabilidades, inspirado no filme Quebrando a Banca.
-                <br><b>Comentário: </b>Foi legal desenvolver o jogo, principalmente o tabuleiro e os personagens</p>
-            </div>
-    </div>
-</section>
-
-<section class="(2)" id="trimestre2">  
-
-    <!-- Atividade 3 -->
-    <div class="atividade">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5ajmuLyhOcLW2eDunDY5oYs3ktt3U_iMzvqQZkQWocEL9DA/viewform?usp=header">
-            <img src="/imagens/estatistica.webp" alt="estatistica">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Estatistica
-                <br><b>Habilidades: </b>  C4 - H27, H28 E H29
-                <br><b>Objetivo: </b> Desenvolver uma pesquisa simples para coletar dados, aplicar medidas estatísticas (média, mediana, moda, amplitude), criar gráficos e interpretar os resultados, utilizando ferramentas digitais para compreender e comunicar informações estatísticas.
-                <br><b>Comentário: </b>Atividade simples de ser feita e interessante observar os dados coletados na pesquisa</p>
-            </div>
-    </div>
-
-    <!-- Atividade 4 -->
-    <div class="atividade">
-        <a href="https://exams-sesi-avaliacao-2022.didatti.net.br/aluno-relatorio/70473180152?periodo=15">
-            <img src="/imagens/passe.png" alt="passe">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> PASSE
-                <br><b>Habilidades: </b> C5, H30 e H31
-                <br><b>Objetivo: </b> Analisar e interpretar o desempenho dos alunos em Matemática ao longo da etapa escolar, identificando níveis de proficiência para orientar estratégias educacionais e acompanhar o progresso no aprendizado.
-                <br><b>Comentário: </b>É um meio de conseguir identificar quais matérias precisam ser revisadas</p>
-            </div>
-    </div>
-
-    <!-- Atividade 5 -->
-    <div class="atividade">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5ajmuLyhOcLW2eDunDY5oYs3ktt3U_iMzvqQZkQWocEL9DA/viewform?usp=header">
-            <img src="/imagens/estatistica.webp" alt="estatistica">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> Estatistica
-                <br><b>Habilidades: </b>  C4 - H27, H28 E H29
-                <br><b>Objetivo: </b> Desenvolver uma pesquisa simples para coletar dados, aplicar medidas estatísticas (média, mediana, moda, amplitude), criar gráficos e interpretar os resultados, utilizando ferramentas digitais para compreender e comunicar informações estatísticas.
-                <br><b>Comentário: </b>Atividade simples de ser feita e interessante observar os dados coletados na pesquisa</p>
-            </div>
-    </div>
-</section>
-
-<section class="(3)" id="trimestre3">  
-
-    <!-- Atividade 4 -->
-    <div class="atividade">
-        <a href="https://www.canva.com/design/DAG3LcmbBnI/Cue6T9Pxu2OS8kjOF4duvg/edit?utm_content=DAG3LcmbBnI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
-            <img src="/imagens/Apresentação confeitaria .png" alt="passe">
-        </a>
-        <div class="texto">
-            <p><b>Nome: </b> PASSE
-                <br><b>Habilidades: </b> C5, H30 e H31
-                <br><b>Objetivo: </b> Analisar e interpretar o desempenho dos alunos em Matemática ao longo da etapa escolar, identificando níveis de proficiência para orientar estratégias educacionais e acompanhar o progresso no aprendizado.
-                <br><b>Comentário: </b>É um meio de conseguir identificar quais matérias precisam ser revisadas</p>
-            </div>
-    </div>
-</div>
-</section>
-
-<script src="/script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
