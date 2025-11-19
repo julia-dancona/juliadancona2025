@@ -1,6 +1,7 @@
-html, body {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px
 }
 
 body {

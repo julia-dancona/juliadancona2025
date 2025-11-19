@@ -1,16 +1,22 @@
-
 /* ESTILOS GERAIS E FONTES */
 body {
-  font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #010A26;
-  overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #010A26;
+    overflow-x: hidden;
 }
 
-.inter { font-family: "Inter", sans-serif; font-weight: 400; }
-.outfit { font-family: "Outfit", sans-serif; font-weight: 800; }
+.inter {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+}
 
 p {
     text-align: justify;
@@ -20,25 +26,25 @@ p {
 
 /* CABEÇALHO */
 .header {
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 6%;
-  padding: 1%;
-  background-color: #010A26;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 5px 5px 10px rgba(85, 85, 85, 0.5);
-  top: 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 6%;
+    padding: 1%;
+    background-color: #010A26;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(85, 85, 85, 0.5);
+    top: 0;
 }
 
 .cabecalho {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -56,13 +62,15 @@ p {
     width: 35%;
 }
 
-a#areas, a.button {
+a#areas,
+a.button {
     position: relative;
     color: #C8D6F1;
     text-decoration: none;
 }
 
-a#areas:before, a.button:before {
+a#areas:before,
+a.button:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -75,7 +83,8 @@ a#areas:before, a.button:before {
     transition: all 0.3s ease-in-out 0s;
 }
 
-a#areas:hover:before, a.button:hover:before {
+a#areas:hover:before,
+a.button:hover:before {
     visibility: visible;
     transform: scaleX(1);
 }
@@ -92,12 +101,14 @@ a#areas:hover:before, a.button:hover:before {
 }
 
 section {
-    display: none; /* Esconde seções */
+    display: none;
+    /* Esconde seções */
     width: 100%;
 }
 
 section.ativo {
-    display: flex; /* Mostra seção ativa */
+    display: flex;
+    /* Mostra seção ativa */
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -105,8 +116,8 @@ section.ativo {
 }
 
 .container-botao {
-    width: 100%;  
-    height: 30vh; 
+    width: 100%;
+    height: 30vh;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -114,7 +125,8 @@ section.ativo {
     justify-content: center;
     background-color: #010A26;
     z-index: 1;
-    padding-top: 6%; /* Espaço para não ficar escondido atrás do header */
+    padding-top: 6%;
+    /* Espaço para não ficar escondido atrás do header */
 }
 
 .btn {
@@ -138,18 +150,35 @@ svg {
     transition: 1s ease-in-out;
 }
 
-.btn:hover { background: #C8D6F1; transition: 2s; }
-.btn:hover span { color: #010A26; }
-.btn:hover svg { stroke-dashoffset: -480; }
-.btn span { color: white; font-size: 18px; font-weight: 100; position: relative; z-index: 2; }
+.btn:hover {
+    background: #C8D6F1;
+    transition: 2s;
+}
+
+.btn:hover span {
+    color: #010A26;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    z-index: 2;
+}
 
 /* ATIVIDADES */
 .atividades {
-    display: flex; /* FLEXBOX para centralizar horizontalmente */
+    display: flex;
+    /* FLEXBOX para centralizar horizontalmente */
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%; 
+    width: 100%;
     margin-top: 20px;
     padding-bottom: 50px;
 }
@@ -162,34 +191,44 @@ svg {
     max-width: 100%;
     background: #C8D6F1;
     border-radius: 12px;
-    max-width: 300px; 
-    min-height: 150px; 
+    max-width: 300px;
+    min-height: 150px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease-in-out;
     padding: 15px;
     margin-bottom: 30px;
     position: relative;
-    z-index: 1; 
-    cursor: pointer; 
+    z-index: 1;
+    cursor: pointer;
 }
 
-.atividade:hover { transform: scale(1.05); }
-.atividade img { max-width: 100%; height: auto; border-radius: 8px; display: block; }
+.atividade:hover {
+    transform: scale(1.05);
+}
+
+.atividade img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
 
 
 
 /* MODAL (Centralizado e Fixo) */
 .modal {
-    display: none; /* O JS mudará para 'flex' */
-    position: fixed; 
-    z-index: 200; /* Modal acima de tudo (Nível 200) */
+    display: none;
+    /* O JS mudará para 'flex' */
+    position: fixed;
+    z-index: 200;
+    /* Modal acima de tudo (Nível 200) */
     left: 0;
-    top: 0; 
-    width: 100%; 
+    top: 0;
+    width: 100%;
     height: 100%;
-    justify-content: center; 
-    align-items: center;  
-    background-color: rgba(0,0,0,0.8); 
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
@@ -198,13 +237,13 @@ svg {
     margin: 0;
     padding: 30px;
     border: 1px solid #888;
-    width: 80%; 
-    max-width: 600px; 
+    width: 80%;
+    max-width: 600px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     position: relative;
-    z-index: 201; 
-    max-height: 90vh; 
+    z-index: 201;
+    max-height: 90vh;
     overflow-y: auto;
 }
 
@@ -242,4 +281,7 @@ svg {
     line-height: 1;
     cursor: pointer;
 }
-.close-button:hover { color: #010A26; }
+
+.close-button:hover {
+    color: #010A26;
+}

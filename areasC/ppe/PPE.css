@@ -1,7 +1,7 @@
 .slabo-27px-regular {
-  font-family: "Slabo 27px", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Slabo 27px", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -12,12 +12,12 @@ body {
 }
 
 /* Cabeçalho */
-.capa{
+.capa {
     display: flex;
     padding-bottom: 5%;
 }
 
-.header{
+.header {
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -25,7 +25,7 @@ body {
     background-color: #010A26;
 }
 
-.cabecalho{
+.cabecalho {
     margin: 0;
     padding: 0;
     display: flex;
@@ -34,7 +34,7 @@ body {
     width: 100%;
 }
 
-.portAnteriores{
+.portAnteriores {
     display: flex;
     justify-content: space-around;
     width: 5%;
@@ -42,19 +42,21 @@ body {
     padding-left: 93%;
 }
 
-.areasTopo{
+.areasTopo {
     display: flex;
     justify-content: space-around;
     width: 35%;
 }
 
-a#areas, a.button{
+a#areas,
+a.button {
     position: relative;
     color: #C8D6F1;
-    text-decoration: none; 
+    text-decoration: none;
 }
-  
-a#areas:before, a.button:before {
+
+a#areas:before,
+a.button:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -68,25 +70,26 @@ a#areas:before, a.button:before {
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
-  
-a#areas:hover:before, a.button:hover:before{
+
+a#areas:hover:before,
+a.button:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
 
-h1{
+h1 {
     padding-top: 2%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-img{
+img {
     width: 20%;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     flex-direction: column;
